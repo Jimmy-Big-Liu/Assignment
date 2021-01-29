@@ -1,0 +1,34 @@
+float x ;
+float y ;
+
+void setup(){
+  size(500, 500);
+  x = width/4;
+  y = height/4;
+  frameRate(66);
+  background(150);
+};
+
+
+
+void draw(){
+  pushMatrix();
+  rectMode(CENTER);
+  fill(75, 100, 120, 10);
+  strokeWeight(1);
+  translate(width/2, height/2);
+  rotate(-frameCount);
+  fill(150);
+  rect(0, 0, 300, 300);
+  popMatrix();
+  fill(200);
+  ellipse(0,-75,30,30);
+
+  x+=random(-3,3);
+  y+=random(-3,3);
+  ellipse(random(width),random(height),50,50);
+  }
+ 
+  
+    
+  
