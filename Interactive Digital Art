@@ -1,0 +1,62 @@
+void setup(){
+  size(500,500);
+  background(0);
+  frameRate(10);
+}
+int value = 0;
+void draw(){
+  background(10);
+  
+  rect(0,0,300,300);
+  rect(320,0,500,300);
+  rect(320,320,500,500);
+  rect(0,320,100,100);
+  rect(0,440,100,500);
+  rect(120,320,180,500);
+ noStroke();
+  if (mouseX > width/2) {
+  background(0);
+ fill(random(50,255),random(50,255),0);
+  rect(0,0,300,300);
+  fill(random(50,255),0,random(50,255));
+  rect(320,0,500,300);
+  fill(0,0,random(0,255));
+  rect(320,320,500,500);
+  fill(0,random(50,255),random(50,255));
+  rect(0,320,100,100);
+  fill(random(0,255),random(0,255),random(0,255));
+  rect(0,440,100,500);
+  fill(random(50,200),random(50,200),random(50,200));
+  rect(120,320,180,500);
+  }
+else {
+  background(0);
+fill(random(0,255),random(0,255),0);
+  rect(0,0,170,300);
+  fill(random(0,255),0,random(0,255));
+  rect(190,0,300,300);
+    fill(0,0,random(0,255));
+  rect(390,320,100,100);
+   fill(0,random(0,255),random(0,255));
+  rect(390,440,100,100);
+  fill(random(0,255),random(0,255),random(0,255));
+  rect(0,320,170,200);
+    fill(random(50,200),random(50,200),random(50,200));
+  rect(190,320,180,500);
+}
+if (mouseY > width/2) {
+  background(0);
+fill(random(0,255),random(0,255),0);
+  rect(0,210,300,300);
+  fill(random(0,255),0,random(0,255));
+  rect(320,210,500,500);
+  fill(0,0,random(0,255));
+  rect(320,-10,500,200);
+  fill(0,random(0,255),random(0,255));
+  rect(0,90,100,100);
+  fill(random(0,255),random(0,255),random(0,255));
+  rect(0,-430,100,500);
+  fill(random(50,200),random(50,200),random(50,200));
+  rect(120,0,180,190);
+}
+}
